@@ -1,8 +1,5 @@
 ## Mes commandes utiles - spécial AIX  
 
-Udemy cours AIX 7.2
-https://www.udemy.com/share/103fkQ3@OLOXuWNI1LdDQdd9VDCbTJUEwHWSb5zJiasDhthNiEfOVfqU6VWqpVK1Of8KEXfd4A==/
-
 Check os:
 ```
 oslevel -s
