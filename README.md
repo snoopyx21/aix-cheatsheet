@@ -116,3 +116,27 @@ Remove PV
 ```
 rmdev -Rdl <disk_name>
 ```
+
+Resize
+```
+lsvg
+lsvg | xargs -n1 -p lsvg
+
+# check what LV (mount point) on the VG
+lsvg | xargs -n1 -p lsvg -l 
+
+# have look on FreePPs
+lsvg rootvg
+
+# after  you  increase in SVC your disk
+chvg -g "Volume group name"
+
+# use chfs command to expand - examples
+chfs -a size=3G /home
+chfs -a size=3000M /home
+chfs -a size=+1G /home
+chfs -a size=+500M /home
+
+# to check
+df -g
+```
