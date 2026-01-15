@@ -67,6 +67,12 @@ To create a filesystem
 smit fs
 smitty fs
 ```
+### NIM
+List version of a package
+```
+for CLIENT in `lsnim -t standalone|awk '{print $1}'|grep -v aixinstall`; do printf "$CLIENT\t:";/usr/lpp/bos.sysmgt/nim/methods/c_rsh $CLIENT "/usr/bin/lslpp -L | /usr/bin/grep -i openssl.base"; done
+```
+
 
 ### Logical Volume Management
 
