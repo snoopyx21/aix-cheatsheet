@@ -33,6 +33,11 @@ Stop service
 stopsrc -s <service_name>
 ```
 
+Check open port
+```
+netstat -an | grep LISTEN
+```
+
 Shutdown AIX
 ```
 shutdown -Fr
